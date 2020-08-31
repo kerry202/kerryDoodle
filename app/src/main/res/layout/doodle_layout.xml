@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/redo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="回退" />
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/undo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="撤销" />
 
     <FrameLayout
         android:id="@+id/drawControl"
@@ -9,4 +26,4 @@
         android:layout_height="600dp" />
 
 
-</RelativeLayout>
+</LinearLayout>

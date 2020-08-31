@@ -4,6 +4,8 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.locojoy.mydooble.dood.DiyDoodleParams
+import com.locojoy.mydooble.dood.DiyDoodleView
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,14 +16,14 @@ class MainActivity : AppCompatActivity() {
 
         // 涂鸦参数
         // 涂鸦参数
-        val params = DoodleParams()
+        val params = DiyDoodleParams()
         params.mIsFullScreen = true
         // 图片路径
         // 图片路径
         params.mImagePath = "/storage/emulated/0/DCIM/Doodle/1598679883199.jpg"
         // 初始画笔大小
         // 初始画笔大小
-        params.mPaintUnitSize = DoodleView.DEFAULT_SIZE.toFloat()
+        params.mPaintUnitSize = DiyDoodleView.DEFAULT_SIZE.toFloat()
         // 画笔颜色
         // 画笔颜色
         params.mPaintColor = Color.RED

@@ -21,9 +21,6 @@
 
             />
 
-        <activity android:name=".Draw2Activity"
-            android:configChanges="screenSize|orientation|keyboardHidden|navigation|keyboard"
-            />
     </application>
 
 </manifest>
