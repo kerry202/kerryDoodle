@@ -5,17 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="00000000000000000"
-            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00000000000000000" />
+
     <FrameLayout
-        android:layout_marginTop="30dp"
-        android:background="#fff144"
+        android:id="@+id/frContorl"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        android:id="@+id/frContorl"
-        />
+        android:layout_marginTop="30dp"
+        android:background="#fff144" />
+
+
 
 </RelativeLayout>

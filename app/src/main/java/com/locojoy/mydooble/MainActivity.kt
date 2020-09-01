@@ -1,11 +1,13 @@
 package com.locojoy.mydooble
 
 import android.content.Intent
+import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.locojoy.mydooble.dood.DiyDoodleParams
-import com.locojoy.mydooble.dood.DiyDoodleView
+import com.locojoy.mydooble.utils.views.DiyDoodleView
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,7 +36,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, DrawActivity::class.java)
         intent.putExtra("key_doodle_params", params)
         startActivity(intent)
-
     }
 
 }

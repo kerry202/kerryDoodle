@@ -4,26 +4,74 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <TextView
         android:id="@+id/redo"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:background="#fff111"
         android:gravity="center"
         android:text="回退" />
 
 
     <TextView
-        android:gravity="center"
         android:id="@+id/undo"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:background="#dff666"
+        android:gravity="center"
         android:text="撤销" />
 
-    <FrameLayout
-        android:id="@+id/drawControl"
+
+    <TextView
+        android:id="@+id/eraser"
         android:layout_width="match_parent"
-        android:layout_height="600dp" />
+        android:layout_height="40dp"
+        android:background="@color/color_E9EEFF"
+        android:gravity="center"
+        android:text="橡皮擦" />
+
+
+    <TextView
+        android:id="@+id/brush"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ccc999"
+        android:gravity="center"
+        android:text="画笔" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+
+<!--        <com.locojoy.mydooble.DiyBackView-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/back"-->
+<!--            />-->
+
+<!--        <com.locojoy.mydooble.DiyHelpView-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/myimg"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
+
+        <FrameLayout
+            android:id="@+id/drawControl"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+<!--        <com.locojoy.mydooble.dood.DiyBallView-->
+<!--            android:id="@+id/ball"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
+
+
+
+    </FrameLayout>
 
 
 </LinearLayout>
